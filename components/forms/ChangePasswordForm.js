@@ -89,6 +89,9 @@ export default function ChangePasswordForm({ values, onSave, onClose }) {
               </div>
             </FormRow>
             <FormButtons>
+              {/* <Button type="submit" variant="action">
+                <FormattedMessage id="label.save" defaultMessage="Save" />
+              </Button> */}
               <Button onClick={onClose}>
                 <FormattedMessage id="label.cancel" defaultMessage="Cancel" />
               </Button>
