@@ -65,7 +65,47 @@ export default function LoginForm() {
 
   return (
     <FormLayout className={styles.login}>
-      
+      <Formik
+        initialValues={{
+          username: '',
+          password: '',
+        }}
+        validate={validate}
+        onSubmit={handleSubmit}
+      >
+        {() => (
+          <Form>
+            <div className={styles.header}>
+              <Icon icon={<Logo />} size="xlarge" className={styles.icon} />
+              <h1 className="center">Rebacle</h1>
+            </div>
+            <FormRow>
+              <label htmlFor="username">
+                <FormattedMessage id="label.username" defaultMessage="Username" />
+              </label>
+              <div>
+                <Field name="username" type="text" />
+                <FormError name="username" />
+              </div>
+            </FormRow>
+            <FormRow>
+              <label htmlFor="password">
+                <FormattedMessage id="label.password" defaultMessage="Password" />
+              </label>
+              <div>
+                <Field name="password" type="password" />
+                <FormError name="password" />
+              </div>
+            </FormRow>
+            <FormButtons>
+              <Button type="submit" variant="action">
+                <FormattedMessage id="label.login" defaultMessage="Login" />
+              </Button>
+            </FormButtons>
+            <FormMessage>{message}</FormMessage>
+          </Form>
+        )}
+      </Formik>
     </FormLayout>
   );
 }
