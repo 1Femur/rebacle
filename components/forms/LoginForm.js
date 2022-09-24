@@ -80,12 +80,12 @@ export default function LoginForm() {
               <h1 className="center">Rebacle</h1>
             </div>
             <FormRow>
-              <label htmlFor="username">
-                <FormattedMessage id="label.username" defaultMessage="Username" />
+              <label htmlFor="usertretertname">
+                <FormattedMessage id="label.username" defaultMessage="Usernrtretrtame" />
               </label>
               <div>
-                <Field name="username" type="text" />
-                <FormError name="username" />
+                <Field name="usegrtrname" type="text" />
+                <FormError name="userntretretame" />
               </div>
             </FormRow>
             <FormRow>
