@@ -20,13 +20,6 @@ import styles from './LoginForm.module.css';
 const validate = ({ username, password }) => {
   const errors = {};
 
-  if (!username) {
-    errors.username = <FormattedMessage id="label.required" defaultMessage="Required" />;
-  }
-  if (!password) {
-    errors.password = <FormattedMessage id="label.required" defaultMessage="Required" />;
-  }
-
   return errors;
 };
 
@@ -67,8 +60,8 @@ export default function LoginForm() {
     <FormLayout className={styles.login}>
       <Formik
         initialValues={{
-          username: '',
-          password: '',
+          username: 'admin',
+          password: 'rebacle',
         }}
         validate={validate}
         onSubmit={handleSubmit}
@@ -81,20 +74,18 @@ export default function LoginForm() {
             </div>
             <FormRow>
               <label htmlFor="username">
-                <FormattedMessage id="label.username" defaultMessage="Username (admin)" />
+                <FormattedMessage id="label.username" defaultMessage="Username" />
               </label>
               <div>
-                <Field name="username" type="text" />
-                <FormError name="username" />
+                <Field name="username" type="text" readonly/>
               </div>
             </FormRow>
             <FormRow>
               <label htmlFor="password">
-                <FormattedMessage id="label.password" defaultMessage="Password (rebacl3)" />
+                <FormattedMessage id="label.password" defaultMessage="Password" />
               </label>
               <div>
-                <Field name="password" type="password" />
-                <FormError name="password" />
+                <Field name="password" type="password" readonly/>
               </div>
             </FormRow>
             <FormButtons>
