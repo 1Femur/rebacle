@@ -66,7 +66,7 @@ export default function ChangePasswordForm({ values, onSave, onClose }) {
                 <FormattedMessage id="label.current-password" defaultMessage="Current password" />
               </label>
               <div>
-                <Field name="current_password" type="password" readonly/>
+                <Field name="current_password" type="password" />
                 <FormError name="current_password" />
               </div>
             </FormRow>
@@ -75,7 +75,7 @@ export default function ChangePasswordForm({ values, onSave, onClose }) {
                 <FormattedMessage id="label.new-password" defaultMessage="New password" />
               </label>
               <div>
-                <Field name="new_password" type="password" readonly/>
+                <Field name="new_password" type="password" />
                 <FormError name="new_password" />
               </div>
             </FormRow>
@@ -84,14 +84,11 @@ export default function ChangePasswordForm({ values, onSave, onClose }) {
                 <FormattedMessage id="label.confirm-password" defaultMessage="Confirm password" />
               </label>
               <div>
-                <Field name="confirm_password" type="password" readonly/>
+                <Field name="confirm_password" type="password" />
                 <FormError name="confirm_password" />
               </div>
             </FormRow>
             <FormButtons>
-              <Button type="#" variant="action">
-                <FormattedMessage id="label.save" defaultMessage="Save" />
-              </Button>
               <Button onClick={onClose}>
                 <FormattedMessage id="label.cancel" defaultMessage="Cancel" />
               </Button>
