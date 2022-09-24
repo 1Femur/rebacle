@@ -1,6 +1,6 @@
 :root {
   --gray50: #ffffff;
-  --gray75: #fafafa;
+  --gray75: #f8f5ed;
   --gray100: #f5f5f5;
   --gray200: #eaeaea;
   --gray300: #e1e1e1;
@@ -41,8 +41,8 @@
 }
 
 [data-theme='dark'] {
-  --gray50: #252525;
-  --gray75: #2f2f2f;
+  --gray50: #050505;
+  --gray75: #0a0a0a;
   --gray100: #323232;
   --gray200: #3e3e3e;
   --gray300: #4a4a4a;
