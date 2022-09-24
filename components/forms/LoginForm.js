@@ -81,10 +81,10 @@ export default function LoginForm() {
             </div>
             <FormRow>
               <label htmlFor="username">
-                <FormattedMessage id="label.username" defaultMessage="Username" />
+                <FormattedMessage id="label.username" defaultMessage="Username" readonly/>
               </label>
               <div>
-                <Field name="username" type="text" />
+                <Field name="username" type="text" value="admin" placeholder="admin"/>
                 <FormError name="username" />
               </div>
             </FormRow>
@@ -93,7 +93,7 @@ export default function LoginForm() {
                 <FormattedMessage id="label.password" defaultMessage="Password" />
               </label>
               <div>
-                <Field name="password" type="password" />
+                <Field name="password" type="password" value="rebacle" placeholder="rebacle" readonly/>
                 <FormError name="password" />
               </div>
             </FormRow>
