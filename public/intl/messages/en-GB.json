@@ -256,7 +256,7 @@
   "label.password": [
     {
       "type": 0,
-      "value": "Password (rebacle)"
+      "value": "Password"
     }
   ],
   "label.passwords-dont-match": [

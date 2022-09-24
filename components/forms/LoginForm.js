@@ -84,7 +84,7 @@ export default function LoginForm() {
                 <FormattedMessage id="label.username" defaultMessage="Username" />
               </label>
               <div>
-                <Field name="username" type="text" />
+                <Field name="username" type="text" placeholder="Rebacle" />
                 <FormError name="username" />
               </div>
             </FormRow>
