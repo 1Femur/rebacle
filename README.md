@@ -1,12 +1,7 @@
-# Rebacle
+# rebacle
 
+Rebacle is a simple, fast, privacy-focused alternative to Google Analytics.
 
-Rebacle is a server side, no-cookie, drop-in and privacy focused tracking solution for applications and websites. Integrated into your application it enables you to track HTTP traffic without invading the privacy of your visitors.
-
-
-## Getting started
-
-A detailed getting started guide can be found at [https://docs.rebacle.com/](https://docs.rebacle.com/)
 
 ## Installing from source
 
@@ -29,7 +24,7 @@ cd rebacle
 yarn install
 ```
 
-### Configure Rebacle
+### Configure rebacle
 
 Create an `.env` file with the following
 
@@ -68,18 +63,6 @@ By default this will launch the application on `http://localhost:3000`. You will
 [proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/) requests from your web server
 or change the [port](https://nextjs.org/docs/api-reference/cli#production) to serve the application directly.
 
-## Installing with Docker
-
-To build the umami container and start up a Postgres database, run:
-
-```bash
-docker compose up
-```
-
-Or with MySQL support:
-```bash
-docker pull docker.umami.is/umami-software/umami:mysql-latest
-```
 
 ## Getting updates
 
