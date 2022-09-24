@@ -84,7 +84,7 @@ export default function LoginForm() {
                 <FormattedMessage id="label.username" defaultMessage="Username" />
               </label>
               <div>
-                <Field name="username" type="text" placeholder="Rebacle" />
+                <Field name="username" type="text" placeholder="admin" />
                 <FormError name="username" />
               </div>
             </FormRow>
@@ -93,7 +93,7 @@ export default function LoginForm() {
                 <FormattedMessage id="label.password" defaultMessage="Password" />
               </label>
               <div>
-                <Field name="password" type="password" />
+                <Field name="password" type="password" placeholder="rebacle"/>
                 <FormError name="password" />
               </div>
             </FormRow>
